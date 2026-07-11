@@ -1,30 +1,51 @@
-if (keyboard_check(key_sprint))
+if mobile
 {
-    speed_current = speed_sprint
+    
+   if (keyboard_check(key_sprint))
+   {
+       speed_current = speed_sprint
+   }
+   else 
+   {
+       speed_current = speed_walk
+   }
+   
+   
+   if ((keyboard_check(key_up)) && (!place_meeting(x, y - speed_current, obj_collision)))
+   {
+       y -= speed_current
+   }
+   if ((keyboard_check(key_left)) && (!place_meeting(x - speed_current, y, obj_collision)))
+   {
+       x -= speed_current
+       image_xscale = -1
+   }
+   if ((keyboard_check(key_down)) && (!place_meeting(x, y + speed_current, obj_collision)))
+   {
+       y += speed_current
+   }
+   if ((keyboard_check(key_right)) && (!place_meeting(x + speed_current, y, obj_collision)))
+   {
+       x += speed_current
+       image_xscale = 1
+   }
+    
+}
+
+if (keyboard_check(key_interact))
+{
+    if (distance_to_object(obj_shiny_thing) < dist_interact)
+    {
+        mobile = false
+        obj_note.visible = true
+        obj_note.x = x
+        obj_note.y = y
+    }
 }
 else 
 {
-    speed_current = speed_walk
-}
-
-
-if ((keyboard_check(key_up)) && (!place_meeting(x, y - speed_current, obj_collision)))
-{
-    y -= speed_current
-}
-if ((keyboard_check(key_left)) && (!place_meeting(x - speed_current, y, obj_collision)))
-{
-    x -= speed_current
-    image_xscale = -1
-}
-if ((keyboard_check(key_down)) && (!place_meeting(x, y + speed_current, obj_collision)))
-{
-    y += speed_current
-}
-if ((keyboard_check(key_right)) && (!place_meeting(x + speed_current, y, obj_collision)))
-{
-    x += speed_current
-    image_xscale = 1
+    mobile = true
+    obj_note.visible = false
 }
 
 // Get current view dimensions
