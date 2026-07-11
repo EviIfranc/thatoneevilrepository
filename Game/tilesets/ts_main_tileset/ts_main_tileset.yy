@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tise_floor_tileset",
+  "%Name":"ts_main_tileset",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":22,
@@ -8,8 +8,8 @@
     "TileCompressedData":[-528,0,],
     "TileDataFormat":1,
   },
-  "name":"tise_floor_tileset",
-  "out_columns":1,
+  "name":"ts_main_tileset",
+  "out_columns":3,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -19,8 +19,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_floor_tileset",
-    "path":"sprites/spr_floor_tileset/spr_floor_tileset.yy",
+    "name":"spr_main_tileset",
+    "path":"sprites/spr_main_tileset/spr_main_tileset.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -35,5 +35,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":2,
+  "tile_count":9,
 }
