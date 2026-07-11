@@ -1,16 +1,16 @@
-if (keyboard_check(up_key))
+if ((keyboard_check(up_key)) && (!place_meeting(x, y - speed_walk, obj_collision)))
 {
     y -= speed_walk
 }
-if (keyboard_check(left_key))
+if ((keyboard_check(left_key)) && (!place_meeting(x - speed_walk, y, obj_collision)))
 {
     x -= speed_walk
 }
-if (keyboard_check(down_key))
+if ((keyboard_check(down_key)) && (!place_meeting(x, y + speed_walk, obj_collision)))
 {
     y += speed_walk
 }
-if (keyboard_check(right_key))
+if ((keyboard_check(right_key)) && (!place_meeting(x + speed_walk, y, obj_collision)))
 {
     x += speed_walk
 }

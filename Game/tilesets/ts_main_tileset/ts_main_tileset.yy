@@ -9,7 +9,7 @@
     "TileDataFormat":1,
   },
   "name":"ts_main_tileset",
-  "out_columns":2,
+  "out_columns":3,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -35,5 +35,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":6,
+  "tile_count":9,
 }
