@@ -12,7 +12,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"parent_interactible",
+    "path":"objects/parent_interactible/parent_interactible.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,7 +29,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"note","filters":[],"listItems":[],"multiselect":false,"name":"note","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"note_1","path":"objects/note_1/note_1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"note_1","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

@@ -32,20 +32,22 @@ if mobile
 }
 
 // Handle player-object interactions
-if (keyboard_check(key_interact))
+if (keyboard_check_pressed(key_interact))
 {
-    if (distance_to_object(obj_shiny_thing) < dist_interact)
+    if (distance_to_object(parent_interactible) < dist_interact)
     {
         mobile = false
-        obj_note.visible = true
-        obj_note.x = x
-        obj_note.y = y
+        current_note_instance = instance_create_layer(x-2.5, y, layer_get_id("Notes"), instance_nearest(x, y, obj_shiny_thing).note)
     }
 }
-else 
+else if (!keyboard_check(key_interact))
 {
     mobile = true
-    obj_note.visible = false
+    //parent_note.visible = false
+    if current_note_instance
+    {
+        instance_destroy(current_note_instance)
+    }
 }
 
 //Make camera follow player
