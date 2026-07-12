@@ -17,3 +17,6 @@ key_right = ord("D")
 key_sprint = vk_shift
 
 key_interact = ord("E")
+
+// Set up placeholders
+current_note_instance = false
