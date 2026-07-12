@@ -45,6 +45,7 @@
     {"id":{"name":"shiny_1","path":"objects/shiny_1/shiny_1.yy",},},
     {"id":{"name":"shiny_2","path":"objects/shiny_2/shiny_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"cut_elevator","path":"sprites/cut_elevator/cut_elevator.yy",},},
     {"id":{"name":"cut_hallway","path":"sprites/cut_hallway/cut_hallway.yy",},},
     {"id":{"name":"spr_button_pressed","path":"sprites/spr_button_pressed/spr_button_pressed.yy",},},
@@ -66,6 +67,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
