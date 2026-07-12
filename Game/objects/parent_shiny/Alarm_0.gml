@@ -2,7 +2,7 @@ if visible = true
 {
     visible = false
 }
-else 
+else if global.shiny_count >= shinies_needed
 {
 	visible = true
 }

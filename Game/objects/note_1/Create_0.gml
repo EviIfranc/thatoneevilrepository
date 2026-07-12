@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-text = "Hello world!"
+text = "Some say there are many secrets hidden behind these walls."
