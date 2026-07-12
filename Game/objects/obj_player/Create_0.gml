@@ -18,6 +18,10 @@ key_sprint = vk_shift
 
 key_interact = ord("E")
 
+// Determine wich objects collide with player
+colliders = layer_get_all_elements("Collisions")
+
 // Set up placeholders
 current_note_instance = false
 gates_cleared = 0
+button_pressed = false

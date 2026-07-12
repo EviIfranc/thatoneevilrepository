@@ -1,30 +1,40 @@
 // Handle movement if able to move
 if mobile
 {
-   if (keyboard_check(key_sprint))
+    // Find all colliders
+    
+    colliders = []
+    collider_ids = layer_get_all_elements("Collisions")
+    array_foreach(collider_ids, function(value, index)
+    {
+        array_push(colliders, layer_instance_get_instance(value))
+    })
+    
+    if (keyboard_check(key_sprint))
    {
        speed_current = speed_sprint
+    button_pressed = true
    }
    else 
    {
        speed_current = speed_walk
    }
+   show_debug_message("Colliders: " + string(colliders))
    
-   
-   if ((keyboard_check(key_up)) && (!place_meeting(x, y - speed_current, obj_collision)))
+   if ((keyboard_check(key_up)) && (!place_meeting(x, y - speed_current, colliders)))
    {
        y -= speed_current
    }
-   if ((keyboard_check(key_left)) && (!place_meeting(x - speed_current, y, obj_collision)))
+   if ((keyboard_check(key_left)) && (!place_meeting(x - speed_current, y, colliders)))
    {
        x -= speed_current
        image_xscale = -1
    }
-   if ((keyboard_check(key_down)) && (!place_meeting(x, y + speed_current, obj_collision)))
+   if ((keyboard_check(key_down)) && (!place_meeting(x, y + speed_current, colliders)))
    {
        y += speed_current
    }
-   if ((keyboard_check(key_right)) && (!place_meeting(x + speed_current, y, obj_collision)))
+   if ((keyboard_check(key_right)) && (!place_meeting(x + speed_current, y, colliders)))
    {
        x += speed_current
        image_xscale = 1
