@@ -30,6 +30,7 @@
   "resources":[
     {"id":{"name":"note_1","path":"objects/note_1/note_1.yy",},},
     {"id":{"name":"note_2","path":"objects/note_2/note_2.yy",},},
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"obj_mask","path":"objects/obj_mask/obj_mask.yy",},},
@@ -41,6 +42,8 @@
     {"id":{"name":"shiny_1","path":"objects/shiny_1/shiny_1.yy",},},
     {"id":{"name":"shiny_2","path":"objects/shiny_2/shiny_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_button_pressed","path":"sprites/spr_button_pressed/spr_button_pressed.yy",},},
+    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_gate","path":"sprites/spr_gate/spr_gate.yy",},},
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},},

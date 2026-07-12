@@ -23,5 +23,6 @@ colliders = layer_get_all_elements("Collisions")
 
 // Set up placeholders
 current_note_instance = false
+current_button_instance = false
 gates_cleared = 0
 button_pressed = false

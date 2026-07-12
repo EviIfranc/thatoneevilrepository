@@ -1,3 +1,5 @@
+type = "shiny"
+
 flash_interval = 30
 alarm[0] = flash_interval
 global.shiny_count = 0
