@@ -36,8 +36,15 @@ if (keyboard_check_pressed(key_interact))
 {
     if (distance_to_object(parent_interactible) < dist_interact)
     {
-        mobile = false
-        current_note_instance = instance_create_layer(x-2.5, y, layer_get_id("Notes"), instance_nearest(x, y, obj_shiny_thing).note)
+        if (global.shiny_count >= instance_nearest(x, y, parent_shiny).shinies_needed)
+        { 
+            mobile = false 
+            current_note_instance = instance_create_layer(x-2.5, y, layer_get_id("Notes"), instance_nearest(x, y, parent_shiny).note)
+            if (global.shiny_count == instance_nearest(x, y, parent_shiny).shinies_needed)
+            {
+                global.shiny_count += 1
+            }
+        }
     }
 }
 else if (!keyboard_check(key_interact))
@@ -48,6 +55,11 @@ else if (!keyboard_check(key_interact))
     {
         instance_destroy(current_note_instance)
     }
+}
+
+if place_meeting(x, y, obj_gate)
+{
+    gates_cleared = 1
 }
 
 //Make camera follow player

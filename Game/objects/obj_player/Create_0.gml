@@ -20,3 +20,4 @@ key_interact = ord("E")
 
 // Set up placeholders
 current_note_instance = false
+gates_cleared = 0

@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shiny_thing",
+  "%Name":"shiny_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shiny_thing",
+  "name":"shiny_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Shinies",
+    "path":"folders/Objects/Shinies.yy",
   },
   "parentObjectId":{
-    "name":"parent_interactible",
-    "path":"objects/parent_interactible/parent_interactible.yy",
+    "name":"parent_shiny",
+    "path":"objects/parent_shiny/parent_shiny.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,9 +28,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"note","filters":[],"listItems":[],"multiselect":false,"name":"note","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"note_1","path":"objects/note_1/note_1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"note_1","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
