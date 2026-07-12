@@ -25,7 +25,7 @@ if (distance_to_object(nearest_interactible) <= dist_interact) && (keyboard_chec
             break
     }
 }
-else if (!keyboard_check(key_interact))
+else if ((!keyboard_check(key_interact)) && !cutscene)
 {
     mobile = true
     if current_note_instance
@@ -94,16 +94,37 @@ if place_meeting(x, y, obj_gate)
 {
     gates_cleared = 1
 }
+if (mobile && place_meeting(x,y,obj_cutscene_trigger))
+{
+    mobile = false
+    cutscene_counter += 1
+    
+    
+    camera_set_view_size(view_camera[0], 1024, 512)
+    var view_w = camera_get_view_width(view_camera[0])
+    var view_h = camera_get_view_height(view_camera[0])
+   
+    var cam_x = obj_player.x - (view_w * 0.5)
+    var cam_y = obj_player.y - (view_h * 0.5)
+   
+    camera_set_view_pos(view_camera[0], cam_x, cam_y) 
+    
+    
+    cutscene = instance_create_layer(x, y-50, layer_get_id("Cutscene"), obj_cutscene)
+}
 
 
 
 
 
 //Make camera follow player
-var view_w = camera_get_view_width(view_camera[0]);
-var view_h = camera_get_view_height(view_camera[0]);
-
-var cam_x = obj_player.x - (view_w * 0.5);
-var cam_y = obj_player.y - (view_h * 0.5);
-
-camera_set_view_pos(view_camera[0], cam_x, cam_y);
+if mobile
+{ 
+    var view_w = camera_get_view_width(view_camera[0])
+   var view_h = camera_get_view_height(view_camera[0])
+   
+   var cam_x = obj_player.x - (view_w * 0.5)
+   var cam_y = obj_player.y - (view_h * 0.5)
+   
+   camera_set_view_pos(view_camera[0], cam_x, cam_y) 
+}

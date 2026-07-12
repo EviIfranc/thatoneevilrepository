@@ -36,6 +36,9 @@
     "name":"spr_ghost",
     "path":"sprites/spr_ghost/spr_ghost.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_hitbox",
+    "path":"sprites/spr_hitbox/spr_hitbox.yy",
+  },
   "visible":true,
 }

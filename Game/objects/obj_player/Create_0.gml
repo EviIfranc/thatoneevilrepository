@@ -26,3 +26,5 @@ current_note_instance = false
 current_button_instance = false
 gates_cleared = 0
 button_pressed = false
+cutscene_counter = 0
+cutscene = false
